@@ -10,6 +10,10 @@ The notebook [Tree.ipynb](Tree.ipynb) contains detailed implementations of vario
 - Classification Tree: A decision tree algorithm for classification tasks.
 - Random Forest: An ensemble method that uses multiple decision trees to improve classification accuracy.
 - Boosting: A technique to combine the predictions of several base estimators to reduce bias and variance.
+- Bagging
+- Gradient Boosting
+- Ada Boost
+- XG Boost
 - Grid Search: A method to perform hyperparameter optimization for machine learning models.
 
 ## Future Additions
