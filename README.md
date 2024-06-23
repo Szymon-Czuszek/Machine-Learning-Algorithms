@@ -8,6 +8,10 @@ Welcome to the Machine Learning Algorithms repository! This repository is dedica
 
 The notebook [Tree.ipynb](Tree.ipynb) contains detailed implementations of various tree-based machine learning models. In this notebook, you will find techniques such as:
 - **Classification Tree**: A decision tree algorithm for classification tasks.
+```python
+clftree = tree.DecisionTreeClassifier(max_depth = 3)
+clftree.fit(X_train, y_train)
+```
 - **Bagging**: A technique that involves training multiple versions of a predictor on different subsets of the data and combining their predictions.
 - **Random Forest**: An ensemble method that uses multiple decision trees trained on different parts of the same dataset to improve classification accuracy.
 - **Boosting**: A technique to combine the predictions of several base estimators to reduce bias and variance. It adjusts the weights of incorrectly classified instances so that subsequent classifiers focus more on difficult cases.
