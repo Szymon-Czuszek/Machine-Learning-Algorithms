@@ -13,6 +13,16 @@ clftree = tree.DecisionTreeClassifier(max_depth = 3)
 clftree.fit(X_train, y_train)
 ```
 - **Bagging**: A technique that involves training multiple versions of a predictor on different subsets of the data and combining their predictions.
+```python
+clftree = tree.DecisionTreeClassifier(max_depth = 3)
+bag_clf = BaggingClassifier(estimator = clftree,
+                            n_estimators = 500,
+                            bootstrap = True,
+                            n_jobs = -1,
+                            random_state = 42
+                           )
+bag_clf.fit(X_train, y_train)
+```
 - **Random Forest**: An ensemble method that uses multiple decision trees trained on different parts of the same dataset to improve classification accuracy.
 - **Boosting**: A technique to combine the predictions of several base estimators to reduce bias and variance. It adjusts the weights of incorrectly classified instances so that subsequent classifiers focus more on difficult cases.
 - **AdaBoost**: A specific type of boosting algorithm that combines multiple weak classifiers to create a strong classifier by focusing on misclassified instances.
