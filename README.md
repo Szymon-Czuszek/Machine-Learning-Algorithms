@@ -77,6 +77,8 @@ grid_search.fit(X_train, y_train)
 
 #### Measuring the model performance
 
+All tree based models were evaluated with below functions, which were created to speed up the process.
+
 ```python
 # Define plot_confusion_matrix function
 def plot_confusion_matrix(conf_matrix, labels = ['Not Fraud', 'Fraud'], title = 'Confusion Matrix'):
