@@ -54,6 +54,26 @@ gbc_clf = GradientBoostingClassifier()
 gbc_clf.fit(X_train, y_train)
 ```
 - **Grid Search**: A method to perform hyperparameter optimization for machine learning models by exhaustively searching through a specified parameter grid.
+```python
+xgb_clf = xgb.XGBClassifier(n_estimators = 500,
+                            learning_rate = 0.1,
+                            random_state = 42
+                           )
+param_test1 = {
+ 'max_depth':range(3, 10, 2),
+    'gamma' : [.1, .2, .3],
+    'subsample':[.8, .9],
+    'colsample_bytree':[.8, .9],
+    'reg_alpha':[1e-2, .1, 1]
+}
+grid_search = GridSearchCV(xgb_clf,
+                           param_test1,
+                           n_jobs = -1,
+                           cv = 5,
+                           scoring = 'accuracy'
+                          )
+grid_search.fit(X_train, y_train)
+```
 
 ## Future Additions
 
