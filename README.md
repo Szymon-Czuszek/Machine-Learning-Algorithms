@@ -75,6 +75,34 @@ grid_search = GridSearchCV(xgb_clf,
 grid_search.fit(X_train, y_train)
 ```
 
+#### Measuring the model performance
+
+```python
+# Define plot_confusion_matrix function
+def plot_confusion_matrix(conf_matrix, labels = ['Not Fraud', 'Fraud'], title = 'Confusion Matrix'):
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(conf_matrix, annot = True, cmap = 'Blues', fmt = 'g', 
+                xticklabels=labels, 
+                yticklabels=labels)
+    plt.xlabel('Predicted label')
+    plt.ylabel('True label')
+    plt.title(title)
+    plt.show()
+
+# Define Evaluate Model function
+def EvaluateModel(y, x):
+    # Model Evaluation
+    print("Accuracy:", accuracy_score(y, x))
+    
+    # Print confusion matrix
+    conf_matrix_test = confusion_matrix(y, x)
+    print("Confusion Matrix:")
+    print(conf_matrix_test)
+    
+    # Plot confusion matrix
+    plot_confusion_matrix(conf_matrix_test)
+```
+
 ## Future Additions
 
 This repository will be continually updated with more machine learning algorithms and techniques. Stay tuned for additions covering a wider range of models and methodologies.
