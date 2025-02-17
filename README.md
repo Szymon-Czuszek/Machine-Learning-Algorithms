@@ -4,6 +4,14 @@ Welcome to the Machine Learning Algorithms repository! This repository is dedica
 
 ## Contents
 
+### KNN
+
+...
+
+### Logistic Regression
+
+...
+
 ### Tree-Based Algorithms
 
 The notebook [Tree.ipynb](Tree.ipynb) contains detailed implementations of various tree-based machine learning models. In this notebook, you will find techniques such as:
