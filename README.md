@@ -6,8 +6,10 @@ Welcome to the Machine Learning Algorithms repository! This repository is dedica
 
 ### KNN
 
+K-Nearest Neighbors (KNN) in Detecting Fake Banknotes
 K-Nearest Neighbors (KNN) is a simple yet effective machine learning algorithm used for classification and regression tasks. In the context of detecting fake banknotes, KNN helps classify new banknotes as either genuine or counterfeit based on their similarity to known examples.
 
+1. How KNN Works
 KNN is a non-parametric, instance-based learning algorithm, meaning it does not make strong assumptions about the data distribution and instead stores all training data to make predictions when needed. The core idea behind KNN is as follows:
 
 Distance Measurement:
@@ -22,12 +24,59 @@ In classification tasks (like fake vs. genuine banknotes), KNN assigns the class
 Final Classification:
 
 The new banknote is classified as genuine or counterfeit depending on which class is more frequent among its neighbors.
-
+2. Why KNN for Fake Banknote Detection?
 Detecting counterfeit banknotes relies on numerical features extracted from the notes, such as variance, skewness, kurtosis, and entropy of their wavelet-transformed images. These features allow KNN to group similar notes together and differentiate fake ones from real ones.
 
 Simplicity: KNN does not require complex mathematical modeling; it simply compares distances between points.
 Flexibility: It works well with both linear and non-linear data distributions.
 Effectiveness in Low-Dimensional Space: Since the dataset consists of only four features, KNN can effectively classify notes without the need for complex feature engineering.
+3. Choosing the Right K
+The parameter K (number of neighbors) plays a crucial role in KNN’s performance:
+
+Small K (e.g., 1-3):
+
+The model is highly sensitive to noise and may overfit to specific training examples.
+Can lead to misclassification if a fake note is very close to a genuine one.
+Large K (e.g., 10+):
+
+The model becomes more stable but may smooth out important details.
+Can misclassify notes if fake banknotes are not well-represented in the training set.
+Typically, choosing an optimal K involves cross-validation to find a balance between bias and variance.
+
+4. Limitations of KNN
+Despite its advantages, KNN has some drawbacks when applied to fake banknote detection:
+
+Computational Cost:
+Since KNN stores all training samples, predicting a new note requires calculating distances to all points, which can be slow for large datasets.
+Sensitivity to Irrelevant Features:
+If irrelevant or highly correlated features are present, KNN’s performance may degrade.
+Imbalanced Data Issues:
+If the dataset has significantly more genuine banknotes than fake ones, KNN might be biased toward predicting genuine notes.
+5. Improving KNN Performance
+To enhance the effectiveness of KNN for detecting fake banknotes:
+
+Feature Scaling:
+
+Since KNN relies on distances, features should be normalized (e.g., Min-Max scaling or Standardization) to prevent some features from dominating others.
+Dimensionality Reduction:
+
+Techniques like Principal Component Analysis (PCA) can remove redundant features, improving speed and accuracy.
+Weighted Voting:
+
+Assigning greater importance to closer neighbors (distance-weighted KNN) can improve classification accuracy.
+Hybrid Approaches:
+
+Combining KNN with other classifiers (e.g., SVM, Decision Trees) or ensemble methods (e.g., Bagging, Boosting) can improve overall detection accuracy.
+
+Small K (e.g., 1-3):
+
+The model is highly sensitive to noise and may overfit to specific training examples.
+Can lead to misclassification if a fake note is very close to a genuine one.
+Large K (e.g., 10+):
+
+The model becomes more stable but may smooth out important details.
+Can misclassify notes if fake banknotes are not well-represented in the training set.
+Typically, choosing an optimal K involves cross-validation to find a balance between bias and variance.
 
 ### Logistic Regression
 
