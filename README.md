@@ -23,6 +23,12 @@ Final Classification:
 
 The new banknote is classified as genuine or counterfeit depending on which class is more frequent among its neighbors.
 
+Detecting counterfeit banknotes relies on numerical features extracted from the notes, such as variance, skewness, kurtosis, and entropy of their wavelet-transformed images. These features allow KNN to group similar notes together and differentiate fake ones from real ones.
+
+Simplicity: KNN does not require complex mathematical modeling; it simply compares distances between points.
+Flexibility: It works well with both linear and non-linear data distributions.
+Effectiveness in Low-Dimensional Space: Since the dataset consists of only four features, KNN can effectively classify notes without the need for complex feature engineering.
+
 ### Logistic Regression
 
 ...
