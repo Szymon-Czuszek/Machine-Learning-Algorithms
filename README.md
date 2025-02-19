@@ -86,6 +86,17 @@ Logistic Regression is a fundamental classification algorithm used to predict ca
 1. How Logistic Regression Works
 Unlike Linear Regression, which predicts continuous values, Logistic Regression is designed for binary classification problems (such as fake vs. genuine). It models the probability that a given input belongs to a particular class.
 
+2. Why Logistic Regression for Fake Banknote Detection?
+Logistic Regression is a strong choice for fake banknote detection due to:
+
+Interpretability:
+Unlike more complex models, Logistic Regression provides a clear probability score, helping understand how features influence classification.
+Efficiency:
+It is computationally inexpensive and works well for small to medium-sized datasets.
+Robustness to Small Data:
+Unlike deep learning models that require massive datasets, Logistic Regression performs well even when labeled counterfeit banknote data is limited.
+Well-Suited for Linearly Separable Data:
+If counterfeit banknotes have distinct statistical differences from real ones, Logistic Regression is highly effective.
 
 
 ### Tree-Based Algorithms
