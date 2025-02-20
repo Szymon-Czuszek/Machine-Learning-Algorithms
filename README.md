@@ -35,16 +35,16 @@ Typically, choosing an optimal K involves cross-validation to find a balance bet
 - The model becomes more stable but may smooth out important details.
 - Can misclassify notes if fake banknotes are not well-represented in the training set.
 
-4. Limitations of KNN
+##### Limitations of KNN
 Despite its advantages, KNN has some drawbacks when applied to fake banknote detection:
+1. Computational Cost:
+- Since KNN stores all training samples, predicting a new note requires calculating distances to all points, which can be slow for large datasets.
+2. Sensitivity to Irrelevant Features:
+- If irrelevant or highly correlated features are present, KNN’s performance may degrade.
+3. Imbalanced Data Issues:
+- If the dataset has significantly more genuine banknotes than fake ones, KNN might be biased toward predicting genuine notes.
 
-Computational Cost:
-Since KNN stores all training samples, predicting a new note requires calculating distances to all points, which can be slow for large datasets.
-Sensitivity to Irrelevant Features:
-If irrelevant or highly correlated features are present, KNN’s performance may degrade.
-Imbalanced Data Issues:
-If the dataset has significantly more genuine banknotes than fake ones, KNN might be biased toward predicting genuine notes.
-5. Improving KNN Performance
+##### Improving KNN Performance
 To enhance the effectiveness of KNN for detecting fake banknotes:
 
 Feature Scaling:
