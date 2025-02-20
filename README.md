@@ -26,18 +26,14 @@ Detecting counterfeit banknotes relies on numerical features extracted from the 
 - Flexibility: It works well with both linear and non-linear data distributions.
 - Effectiveness in Low-Dimensional Space: Since the dataset consists of only four features, KNN can effectively classify notes without the need for complex feature engineering.
 
-3. Choosing the Right K
-The parameter K (number of neighbors) plays a crucial role in KNN’s performance:
-
-Small K (e.g., 1-3):
-
-The model is highly sensitive to noise and may overfit to specific training examples.
-Can lead to misclassification if a fake note is very close to a genuine one.
-Large K (e.g., 10+):
-
-The model becomes more stable but may smooth out important details.
-Can misclassify notes if fake banknotes are not well-represented in the training set.
-Typically, choosing an optimal K involves cross-validation to find a balance between bias and variance.
+##### Choosing the Right K
+Typically, choosing an optimal K involves cross-validation to find a balance between bias and variance. The parameter K (number of neighbors) plays a crucial role in KNN’s performance:
+1. Small K (e.g., 1-3):
+- The model is highly sensitive to noise and may overfit to specific training examples.
+- Can lead to misclassification if a fake note is very close to a genuine one.
+2. Large K (e.g., 10+):
+- The model becomes more stable but may smooth out important details.
+- Can misclassify notes if fake banknotes are not well-represented in the training set.
 
 4. Limitations of KNN
 Despite its advantages, KNN has some drawbacks when applied to fake banknote detection:
