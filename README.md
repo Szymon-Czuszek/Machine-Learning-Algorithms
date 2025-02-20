@@ -6,24 +6,20 @@ Welcome to the Machine Learning Algorithms repository! This repository is dedica
 
 ### KNN
 
-K-Nearest Neighbors (KNN) in Detecting Fake Banknotes
+#### K-Nearest Neighbors (KNN) in Detecting Fake Banknotes
 K-Nearest Neighbors (KNN) is a simple yet effective machine learning algorithm used for classification and regression tasks. In the context of detecting fake banknotes, KNN helps classify new banknotes as either genuine or counterfeit based on their similarity to known examples.
 
-1. How KNN Works
+##### How KNN Works
 KNN is a non-parametric, instance-based learning algorithm, meaning it does not make strong assumptions about the data distribution and instead stores all training data to make predictions when needed. The core idea behind KNN is as follows:
+1. Distance Measurement:
+- When given a new banknote, KNN computes its distance from all training samples using a distance metric, typically Euclidean distance.
+2. Selecting K Neighbors:
+- The algorithm selects the K nearest data points based on the calculated distances.
+3. Voting Mechanism:
+- In classification tasks (like fake vs. genuine banknotes), KNN assigns the class label based on the majority vote among the K nearest neighbors.
+4. Final Classification:
+- The new banknote is classified as genuine or counterfeit depending on which class is more frequent among its neighbors.
 
-Distance Measurement:
-
-When given a new banknote, KNN computes its distance from all training samples using a distance metric, typically Euclidean distance.
-Selecting K Neighbors:
-
-The algorithm selects the K nearest data points based on the calculated distances.
-Voting Mechanism:
-
-In classification tasks (like fake vs. genuine banknotes), KNN assigns the class label based on the majority vote among the K nearest neighbors.
-Final Classification:
-
-The new banknote is classified as genuine or counterfeit depending on which class is more frequent among its neighbors.
 2. Why KNN for Fake Banknote Detection?
 Detecting counterfeit banknotes relies on numerical features extracted from the notes, such as variance, skewness, kurtosis, and entropy of their wavelet-transformed images. These features allow KNN to group similar notes together and differentiate fake ones from real ones.
 
