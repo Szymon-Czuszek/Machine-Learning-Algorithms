@@ -34,6 +34,7 @@ Typically, choosing an optimal K involves cross-validation to find a balance bet
 2. Large K (e.g., 10+):
 - The model becomes more stable but may smooth out important details.
 - Can misclassify notes if fake banknotes are not well-represented in the training set.
+- Typically, choosing an optimal K involves cross-validation to find a balance between bias and variance.
 
 ##### Limitations of KNN
 Despite its advantages, KNN has some drawbacks when applied to fake banknote detection:
@@ -54,16 +55,6 @@ To enhance the effectiveness of KNN for detecting fake banknotes:
 - Assigning greater importance to closer neighbors (distance-weighted KNN) can improve classification accuracy.
 4. Hybrid Approaches:
 - Combining KNN with other classifiers (e.g., SVM, Decision Trees) or ensemble methods (e.g., Bagging, Boosting) can improve overall detection accuracy.
-
-Small K (e.g., 1-3):
-
-The model is highly sensitive to noise and may overfit to specific training examples.
-Can lead to misclassification if a fake note is very close to a genuine one.
-Large K (e.g., 10+):
-
-The model becomes more stable but may smooth out important details.
-Can misclassify notes if fake banknotes are not well-represented in the training set.
-Typically, choosing an optimal K involves cross-validation to find a balance between bias and variance.
 
 ### Logistic Regression
 
