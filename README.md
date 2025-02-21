@@ -46,19 +46,14 @@ Despite its advantages, KNN has some drawbacks when applied to fake banknote det
 
 ##### Improving KNN Performance
 To enhance the effectiveness of KNN for detecting fake banknotes:
-
-Feature Scaling:
-
-Since KNN relies on distances, features should be normalized (e.g., Min-Max scaling or Standardization) to prevent some features from dominating others.
-Dimensionality Reduction:
-
-Techniques like Principal Component Analysis (PCA) can remove redundant features, improving speed and accuracy.
-Weighted Voting:
-
-Assigning greater importance to closer neighbors (distance-weighted KNN) can improve classification accuracy.
-Hybrid Approaches:
-
-Combining KNN with other classifiers (e.g., SVM, Decision Trees) or ensemble methods (e.g., Bagging, Boosting) can improve overall detection accuracy.
+1. Feature Scaling:
+- Since KNN relies on distances, features should be normalized (e.g., Min-Max scaling or Standardization) to prevent some features from dominating others.
+2. Dimensionality Reduction:
+- Techniques like Principal Component Analysis (PCA) can remove redundant features, improving speed and accuracy.
+3. Weighted Voting:
+- Assigning greater importance to closer neighbors (distance-weighted KNN) can improve classification accuracy.
+4. Hybrid Approaches:
+- Combining KNN with other classifiers (e.g., SVM, Decision Trees) or ensemble methods (e.g., Bagging, Boosting) can improve overall detection accuracy.
 
 Small K (e.g., 1-3):
 
