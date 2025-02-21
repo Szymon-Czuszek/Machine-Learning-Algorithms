@@ -58,11 +58,11 @@ To enhance the effectiveness of KNN for detecting fake banknotes:
 
 ### Logistic Regression
 
-Logistic Regression in Detecting Fake Banknotes
+#### Logistic Regression in Detecting Fake Banknotes
 Logistic Regression is a fundamental classification algorithm used to predict categorical outcomes. In the case of fake banknote detection, Logistic Regression helps classify a banknote as either genuine or counterfeit based on extracted numerical features such as variance, skewness, kurtosis, and entropy of wavelet-transformed images.
 
-1. How Logistic Regression Works
-Unlike Linear Regression, which predicts continuous values, Logistic Regression is designed for binary classification problems (such as fake vs. genuine). It models the probability that a given input belongs to a particular class.
+1. How Logistic Regression Works:
+- Unlike Linear Regression, which predicts continuous values, Logistic Regression is designed for binary classification problems (such as fake vs. genuine). It models the probability that a given input belongs to a particular class.
 
 2. Why Logistic Regression for Fake Banknote Detection?
 Logistic Regression is a strong choice for fake banknote detection due to:
