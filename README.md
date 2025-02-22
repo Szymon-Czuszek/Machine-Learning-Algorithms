@@ -76,20 +76,20 @@ Logistic Regression is a strong choice for fake banknote detection due to:
 - If counterfeit banknotes have distinct statistical differences from real ones, Logistic Regression is highly effective.
 
 ##### Key Considerations in Logistic Regression
-Feature Importance & Interpretation
+###### Feature Importance & Interpretation
 1. Each coefficient 𝑤𝑖 indicates how strongly a feature affects the likelihood of a banknote being fake.
 - If 𝑤𝑖 > 0, increasing that feature increases the probability of the banknote being counterfeit.
 - If 𝑤𝑖 < 0, increasing that feature decreases the probability of the banknote being fake.
 - Larger absolute values of 𝑤𝑖, indicate a stronger effect.
 2. By analyzing these weights, we can determine which banknote characteristics are most predictive of counterfeits.
 
-Assumptions & Limitations
-Linearity in Log-Odds:
-Logistic Regression assumes that each feature has a linear relationship with the log-odds of being fake, which may not always hold.
-Sensitive to Outliers:
-Outliers can distort the decision boundary.
-Imbalanced Classes:
-If there are far more genuine than fake banknotes, the model may be biased toward predicting "genuine" too often.
+###### Assumptions & Limitations
+1. Linearity in Log-Odds:
+- Logistic Regression assumes that each feature has a linear relationship with the log-odds of being fake, which may not always hold.
+2. Sensitive to Outliers:
+- Outliers can distort the decision boundary.
+3. Imbalanced Classes:
+- If there are far more genuine than fake banknotes, the model may be biased toward predicting "genuine" too often.
 
 4. Improving Logistic Regression for Fake Banknote Detection
 To enhance performance, several techniques can be applied:
