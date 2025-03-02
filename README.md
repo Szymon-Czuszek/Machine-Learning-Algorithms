@@ -1,4 +1,4 @@
-# Machine Learning Algorithms
+# 🤖 Machine Learning Algorithms
 
 Welcome to the Machine Learning Algorithms repository! This repository is dedicated to providing comprehensive examples and implementations of various machine learning algorithms. All content in this repository is licensed under the MIT License.
 
