@@ -4,7 +4,7 @@ Welcome to the Machine Learning Algorithms repository! This repository is dedica
 
 ## 📌 Contents
 
-### KNN
+### 🔍 KNN
 
 #### 🏦 K-Nearest Neighbors (KNN) in Detecting Fake Banknotes
 K-Nearest Neighbors (KNN) is a simple yet effective machine learning algorithm used for classification and regression tasks. In the context of detecting fake banknotes, KNN helps classify new banknotes as either genuine or counterfeit based on their similarity to known examples.
