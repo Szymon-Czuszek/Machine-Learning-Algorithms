@@ -11,7 +11,7 @@ K-Nearest Neighbors (KNN) is a simple yet effective machine learning algorithm u
 
 ##### ⚙️ How KNN Works
 KNN is a non-parametric, instance-based learning algorithm, meaning it does not make strong assumptions about the data distribution and instead stores all training data to make predictions when needed. The core idea behind KNN is as follows:
-1. Distance Measurement:
+1. 📏 Distance Measurement:
 - When given a new banknote, KNN computes its distance from all training samples using a distance metric, typically Euclidean distance.
 2. Selecting K Neighbors:
 - The algorithm selects the K nearest data points based on the calculated distances.
