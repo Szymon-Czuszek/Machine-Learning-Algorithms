@@ -28,7 +28,7 @@ Detecting counterfeit banknotes relies on numerical features extracted from the 
 
 ##### ⚖️ Choosing the Right K
 Typically, choosing an optimal K involves cross-validation to find a balance between bias and variance. The parameter K (number of neighbors) plays a crucial role in KNN’s performance:
-1. Small K (e.g., 1-3):
+1. 🔎 Small K (e.g., 1-3):
 - The model is highly sensitive to noise and may overfit to specific training examples.
 - Can lead to misclassification if a fake note is very close to a genuine one.
 2. Large K (e.g., 10+):
