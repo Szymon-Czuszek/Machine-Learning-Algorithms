@@ -31,7 +31,7 @@ Typically, choosing an optimal K involves cross-validation to find a balance bet
 1. 🔎 Small K (e.g., 1-3):
 - The model is highly sensitive to noise and may overfit to specific training examples.
 - Can lead to misclassification if a fake note is very close to a genuine one.
-2. Large K (e.g., 10+):
+2. 📉 Large K (e.g., 10+):
 - The model becomes more stable but may smooth out important details.
 - Can misclassify notes if fake banknotes are not well-represented in the training set.
 - Typically, choosing an optimal K involves cross-validation to find a balance between bias and variance.
