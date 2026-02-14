@@ -38,7 +38,7 @@ Typically, choosing an optimal K involves cross-validation to find a balance bet
 
 ##### ⚠️ Limitations of KNN
 Despite its advantages, KNN has some drawbacks when applied to fake banknote detection:
-1. Computational Cost:
+1. 🐢 Computational Cost:
 - Since KNN stores all training samples, predicting a new note requires calculating distances to all points, which can be slow for large datasets.
 2. Sensitivity to Irrelevant Features:
 - If irrelevant or highly correlated features are present, KNN’s performance may degrade.
