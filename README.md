@@ -47,7 +47,7 @@ Despite its advantages, KNN has some drawbacks when applied to fake banknote det
 
 ##### 🚀 Improving KNN Performance
 To enhance the effectiveness of KNN for detecting fake banknotes:
-1. Feature Scaling:
+1. 📐 Feature Scaling:
 - Since KNN relies on distances, features should be normalized (e.g., Min-Max scaling or Standardization) to prevent some features from dominating others.
 2. Dimensionality Reduction:
 - Techniques like Principal Component Analysis (PCA) can remove redundant features, improving speed and accuracy.
