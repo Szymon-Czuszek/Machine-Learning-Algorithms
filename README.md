@@ -24,7 +24,7 @@ KNN is a non-parametric, instance-based learning algorithm, meaning it does not 
 Detecting counterfeit banknotes relies on numerical features extracted from the notes, such as variance, skewness, kurtosis, and entropy of their wavelet-transformed images. These features allow KNN to group similar notes together and differentiate fake ones from real ones.
 - 🧩 Simplicity: KNN does not require complex mathematical modeling; it simply compares distances between points.
 - 🔄 Flexibility: It works well with both linear and non-linear data distributions.
-- Effectiveness in Low-Dimensional Space: Since the dataset consists of only four features, KNN can effectively classify notes without the need for complex feature engineering.
+- 📊 Effectiveness in Low-Dimensional Space: Since the dataset consists of only four features, KNN can effectively classify notes without the need for complex feature engineering.
 
 ##### ⚖️ Choosing the Right K
 Typically, choosing an optimal K involves cross-validation to find a balance between bias and variance. The parameter K (number of neighbors) plays a crucial role in KNN’s performance:
