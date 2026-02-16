@@ -66,7 +66,7 @@ Unlike Linear Regression, which predicts continuous values, Logistic Regression 
 
 ##### 🏆 Why Use Logistic Regression for Fake Banknote Detection?
 Logistic Regression is a strong choice for fake banknote detection due to:
-1. Interpretability:
+1. 📖 Interpretability:
 - Unlike more complex models, Logistic Regression provides a clear probability score, helping understand how features influence classification.
 2. Efficiency:
 - It is computationally inexpensive and works well for small to medium-sized datasets.
