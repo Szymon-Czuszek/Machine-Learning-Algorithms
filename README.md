@@ -53,7 +53,7 @@ To enhance the effectiveness of KNN for detecting fake banknotes:
 - Techniques like Principal Component Analysis (PCA) can remove redundant features, improving speed and accuracy.
 3. ⚖️ Weighted Voting:
 - Assigning greater importance to closer neighbors (distance-weighted KNN) can improve classification accuracy.
-4. Hybrid Approaches:
+4. 🧠 Hybrid Approaches:
 - Combining KNN with other classifiers (e.g., SVM, Decision Trees) or ensemble methods (e.g., Bagging, Boosting) can improve overall detection accuracy.
 
 ### 📊 Logistic Regression
