@@ -89,7 +89,7 @@ Logistic Regression is a strong choice for fake banknote detection due to:
 - Logistic Regression assumes that each feature has a linear relationship with the log-odds of being fake, which may not always hold.
 2. 🎯 Sensitive to Outliers:
 - Outliers can distort the decision boundary.
-3. Imbalanced Classes:
+3. ⚖️ Imbalanced Classes:
 - If there are far more genuine than fake banknotes, the model may be biased toward predicting "genuine" too often.
 
 ##### 🚀 Improving Logistic Regression for Fake Banknote Detection
