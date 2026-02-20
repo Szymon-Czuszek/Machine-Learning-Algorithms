@@ -99,7 +99,7 @@ To enhance performance, several techniques can be applied:
 2. 🧮 Regularization (L1/L2):
 - L1 regularization (Lasso) can help select the most important features.
 - L2 regularization (Ridge) prevents overfitting.
-3. Handling Class Imbalance:
+3. ⚖️ Handling Class Imbalance:
 - If genuine banknotes outnumber fake ones, techniques like SMOTE (Synthetic Minority Over-sampling Technique) or class weighting can help balance the dataset.
 4. Polynomial Features:
 - If the relationship between banknote authenticity and features is nonlinear, adding polynomial terms can improve accuracy.
