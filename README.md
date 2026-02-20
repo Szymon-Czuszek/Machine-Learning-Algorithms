@@ -96,7 +96,7 @@ Logistic Regression is a strong choice for fake banknote detection due to:
 To enhance performance, several techniques can be applied:
 1. 📐 Feature Scaling:
 - Standardizing features ensures that no single variable disproportionately influences predictions.
-2. Regularization (L1/L2):
+2. 🧮 Regularization (L1/L2):
 - L1 regularization (Lasso) can help select the most important features.
 - L2 regularization (Ridge) prevents overfitting.
 3. Handling Class Imbalance:
