@@ -107,7 +107,7 @@ To enhance performance, several techniques can be applied:
 ### 🌳 Tree-Based Algorithms
 
 📓 The notebook [Tree.ipynb](Tree.ipynb) contains detailed implementations of various tree-based machine learning models. In this notebook, you will find techniques such as:
-- **Classification Tree**: A decision tree algorithm for classification tasks.
+- **🌲 Classification Tree**: A decision tree algorithm for classification tasks.
 ```python
 clftree = tree.DecisionTreeClassifier(max_depth = 3)
 clftree.fit(X_train, y_train)
