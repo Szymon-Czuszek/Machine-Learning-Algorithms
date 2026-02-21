@@ -112,7 +112,7 @@ To enhance performance, several techniques can be applied:
 clftree = tree.DecisionTreeClassifier(max_depth = 3)
 clftree.fit(X_train, y_train)
 ```
-- **Bagging**: A technique that involves training multiple versions of a predictor on different subsets of the data and combining their predictions.
+- **📦 Bagging**: A technique that involves training multiple versions of a predictor on different subsets of the data and combining their predictions.
 ```python
 clftree = tree.DecisionTreeClassifier(max_depth = 3)
 bag_clf = BaggingClassifier(estimator = clftree,
