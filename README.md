@@ -104,7 +104,7 @@ To enhance performance, several techniques can be applied:
 4. 🔄 Polynomial Features:
 - If the relationship between banknote authenticity and features is nonlinear, adding polynomial terms can improve accuracy.
 
-### Tree-Based Algorithms
+### 🌳 Tree-Based Algorithms
 
 The notebook [Tree.ipynb](Tree.ipynb) contains detailed implementations of various tree-based machine learning models. In this notebook, you will find techniques such as:
 - **Classification Tree**: A decision tree algorithm for classification tasks.
