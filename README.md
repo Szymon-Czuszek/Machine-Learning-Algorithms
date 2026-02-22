@@ -123,7 +123,7 @@ bag_clf = BaggingClassifier(estimator = clftree,
                            )
 bag_clf.fit(X_train, y_train)
 ```
-- **Random Forest**: An ensemble method that uses multiple decision trees trained on different parts of the same dataset to improve classification accuracy.
+- **🌲🌲 Random Forest**: An ensemble method that uses multiple decision trees trained on different parts of the same dataset to improve classification accuracy.
 ```python
 rf_clf = RandomForestClassifier(n_estimators = 500,
                                 n_jobs = -1,
