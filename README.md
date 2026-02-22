@@ -139,7 +139,7 @@ ada_clf = AdaBoostClassifier(learning_rate = 0.02,
                             )
 ada_clf.fit(X_train, y_train)
 ```
-- **Gradient Boosting**: A boosting technique that builds models sequentially, with each new model correcting errors made by the previous ones, using gradient descent to minimize the loss function.
+- **📈 Gradient Boosting**: A boosting technique that builds models sequentially, with each new model correcting errors made by the previous ones, using gradient descent to minimize the loss function.
 ```python
 xgb_clf = xgb.XGBClassifier(max_depth = 5,
                             n_estimators = 500,
