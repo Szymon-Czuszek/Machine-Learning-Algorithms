@@ -132,7 +132,7 @@ rf_clf = RandomForestClassifier(n_estimators = 500,
 rf_clf.fit(X_train, y_train)
 ```
 - **🚀 Boosting**: A technique to combine the predictions of several base estimators to reduce bias and variance. It adjusts the weights of incorrectly classified instances so that subsequent classifiers focus more on difficult cases.
-- **AdaBoost**: A specific type of boosting algorithm that combines multiple weak classifiers to create a strong classifier by focusing on misclassified instances.
+- **⚡ AdaBoost**: A specific type of boosting algorithm that combines multiple weak classifiers to create a strong classifier by focusing on misclassified instances.
 ```python
 ada_clf = AdaBoostClassifier(learning_rate = 0.02,
                              n_estimators = 500
