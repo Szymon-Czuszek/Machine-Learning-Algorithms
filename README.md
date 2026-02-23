@@ -148,7 +148,7 @@ xgb_clf = xgb.XGBClassifier(max_depth = 5,
                            )
 xgb_clf.fit(X_train, y_train)
 ```
-- **XGBoost**: An advanced implementation of gradient boosting that includes regularization to prevent overfitting and improve model performance.
+- **💎 XGBoost**: An advanced implementation of gradient boosting that includes regularization to prevent overfitting and improve model performance.
 ```python
 gbc_clf = GradientBoostingClassifier()
 gbc_clf.fit(X_train, y_train)
