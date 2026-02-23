@@ -208,7 +208,7 @@ def EvaluateModel(y, x):
 
 Encapsulating the ML models in the SAS Flow with Python Tools.
 
-## Future Additions
+## 🔮 Future Additions
 
 This repository will be continually updated with more machine learning algorithms and techniques. Stay tuned for additions covering a wider range of models and methodologies.
 
