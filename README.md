@@ -192,7 +192,7 @@ def plot_confusion_matrix(conf_matrix, labels = ['Not Fraud', 'Fraud'], title = 
     plt.title(title)
     plt.show()
 ```
-
+##### 🎯 Accuracy Calculation
 ```python
 # Define Evaluate Model function
 def EvaluateModel(y, x):
