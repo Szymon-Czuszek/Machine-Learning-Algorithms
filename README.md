@@ -215,7 +215,7 @@ Encapsulating the ML models in the SAS Flow with Python Tools.
 
 This repository will be continually updated with more machine learning algorithms and techniques. Stay tuned for additions covering a wider range of models and methodologies.
 
-## License
+## 📜 License
 
 This repository is licensed under the MIT License. For more details, please refer to the [LICENSE](LICENSE) file.
 
