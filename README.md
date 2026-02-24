@@ -179,6 +179,7 @@ grid_search.fit(X_train, y_train)
 
 All tree based models were evaluated with below functions, which were created to speed up the process.
 
+##### 📊 Confusion Matrix Visualization
 ```python
 # Define plot_confusion_matrix function
 def plot_confusion_matrix(conf_matrix, labels = ['Not Fraud', 'Fraud'], title = 'Confusion Matrix'):
