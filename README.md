@@ -191,7 +191,9 @@ def plot_confusion_matrix(conf_matrix, labels = ['Not Fraud', 'Fraud'], title = 
     plt.ylabel('True label')
     plt.title(title)
     plt.show()
+```
 
+```python
 # Define Evaluate Model function
 def EvaluateModel(y, x):
     # Model Evaluation
