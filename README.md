@@ -208,8 +208,7 @@ def EvaluateModel(y, x):
     plot_confusion_matrix(conf_matrix_test)
 ```
 ### 📌 SAS Flow
-
-Encapsulating the ML models in the SAS Flow with Python Tools.
+- Encapsulating the ML models in the SAS Flow with Python Tools.
 
 ## 🔮 Future Additions
 - 📈 This repository will be continually updated with more machine learning algorithms and techniques. Stay tuned for additions covering a wider range of models and methodologies.
