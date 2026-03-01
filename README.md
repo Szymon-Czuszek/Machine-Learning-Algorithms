@@ -26,7 +26,7 @@
 - 📊 Effectiveness in Low-Dimensional Space: Since the dataset consists of only four features, KNN can effectively classify notes without the need for complex feature engineering.
 
 ##### ⚖️ Choosing the Right K
-Typically, choosing an optimal K involves cross-validation to find a balance between bias and variance. The parameter K (number of neighbors) plays a crucial role in KNN’s performance:
+- Typically, choosing an optimal K involves cross-validation to find a balance between bias and variance. The parameter K (number of neighbors) plays a crucial role in KNN’s performance:
 1. 🔎 Small K (e.g., 1-3):
 - The model is highly sensitive to noise and may overfit to specific training examples.
 - Can lead to misclassification if a fake note is very close to a genuine one.
