@@ -175,8 +175,7 @@ grid_search.fit(X_train, y_train)
 ```
 
 #### 📏 Measuring the model performance
-
-All tree based models were evaluated with below functions, which were created to speed up the process.
+- All tree based models were evaluated with below functions, which were created to speed up the process.
 
 ##### 📊 Confusion Matrix Visualization
 ```python
