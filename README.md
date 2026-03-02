@@ -92,7 +92,7 @@
 - If there are far more genuine than fake banknotes, the model may be biased toward predicting "genuine" too often.
 
 ##### 🚀 Improving Logistic Regression for Fake Banknote Detection
-To enhance performance, several techniques can be applied:
+- To enhance performance, several techniques can be applied:
 1. 📐 Feature Scaling:
 - Standardizing features ensures that no single variable disproportionately influences predictions.
 2. 🧮 Regularization (L1/L2):
