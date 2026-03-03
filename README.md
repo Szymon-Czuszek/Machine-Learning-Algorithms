@@ -104,7 +104,8 @@
 - If the relationship between banknote authenticity and features is nonlinear, adding polynomial terms can improve accuracy.
 
 ### 🌳 Tree-Based Algorithms
-- 📓 The notebook [Tree.ipynb](Tree.ipynb) contains detailed implementations of various tree-based machine learning models. In this notebook, you will find techniques such as:
+
+#### 📓 The notebook [Tree.ipynb](Tree.ipynb) contains detailed implementations of various tree-based machine learning models. In this notebook, you will find techniques such as:
 - **🌲 Classification Tree**: A decision tree algorithm for classification tasks.
 ```python
 clftree = tree.DecisionTreeClassifier(max_depth = 3)
