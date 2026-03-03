@@ -114,6 +114,7 @@ clftree.fit(X_train, y_train)
 ```
 
 - **📦 Bagging**: A technique that involves training multiple versions of a predictor on different subsets of the data and combining their predictions.
+
 ```python
 clftree = tree.DecisionTreeClassifier(max_depth = 3)
 bag_clf = BaggingClassifier(estimator = clftree,
@@ -124,6 +125,7 @@ bag_clf = BaggingClassifier(estimator = clftree,
                            )
 bag_clf.fit(X_train, y_train)
 ```
+
 - **🌲🌲 Random Forest**: An ensemble method that uses multiple decision trees trained on different parts of the same dataset to improve classification accuracy.
 ```python
 rf_clf = RandomForestClassifier(n_estimators = 500,
