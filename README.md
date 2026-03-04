@@ -127,6 +127,7 @@ bag_clf.fit(X_train, y_train)
 ```
 
 - **🌲🌲 Random Forest**: An ensemble method that uses multiple decision trees trained on different parts of the same dataset to improve classification accuracy.
+
 ```python
 rf_clf = RandomForestClassifier(n_estimators = 500,
                                 n_jobs = -1,
@@ -134,6 +135,7 @@ rf_clf = RandomForestClassifier(n_estimators = 500,
                                )
 rf_clf.fit(X_train, y_train)
 ```
+
 - **🚀 Boosting**: A technique to combine the predictions of several base estimators to reduce bias and variance. It adjusts the weights of incorrectly classified instances so that subsequent classifiers focus more on difficult cases.
 
 - **⚡ AdaBoost**: A specific type of boosting algorithm that combines multiple weak classifiers to create a strong classifier by focusing on misclassified instances.
