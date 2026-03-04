@@ -148,6 +148,7 @@ ada_clf.fit(X_train, y_train)
 ```
 
 - **📈 Gradient Boosting**: A boosting technique that builds models sequentially, with each new model correcting errors made by the previous ones, using gradient descent to minimize the loss function.
+
 ```python
 xgb_clf = xgb.XGBClassifier(max_depth = 5,
                             n_estimators = 500,
@@ -156,6 +157,7 @@ xgb_clf = xgb.XGBClassifier(max_depth = 5,
                            )
 xgb_clf.fit(X_train, y_train)
 ```
+
 - **💎 XGBoost**: An advanced implementation of gradient boosting that includes regularization to prevent overfitting and improve model performance.
 ```python
 gbc_clf = GradientBoostingClassifier()
