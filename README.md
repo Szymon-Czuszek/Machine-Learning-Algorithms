@@ -159,10 +159,12 @@ xgb_clf.fit(X_train, y_train)
 ```
 
 - **💎 XGBoost**: An advanced implementation of gradient boosting that includes regularization to prevent overfitting and improve model performance.
+
 ```python
 gbc_clf = GradientBoostingClassifier()
 gbc_clf.fit(X_train, y_train)
 ```
+
 - **🔎 Grid Search**: A method to perform hyperparameter optimization for machine learning models by exhaustively searching through a specified parameter grid.
 ```python
 xgb_clf = xgb.XGBClassifier(n_estimators = 500,
