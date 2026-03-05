@@ -106,6 +106,7 @@
 ### 🌳 Tree-Based Algorithms
 
 #### 📓 The notebook [Tree.ipynb](Tree.ipynb) contains detailed implementations of various tree-based machine learning models. In this notebook, you will find techniques such as:
+
 - **🌲 Classification Tree**: A decision tree algorithm for classification tasks.
 
 ```python
