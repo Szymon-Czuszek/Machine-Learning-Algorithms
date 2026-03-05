@@ -166,6 +166,7 @@ gbc_clf.fit(X_train, y_train)
 ```
 
 - **🔎 Grid Search**: A method to perform hyperparameter optimization for machine learning models by exhaustively searching through a specified parameter grid.
+
 ```python
 xgb_clf = xgb.XGBClassifier(n_estimators = 500,
                             learning_rate = 0.1,
