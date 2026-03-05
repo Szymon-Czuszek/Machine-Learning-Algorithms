@@ -207,6 +207,7 @@ def plot_confusion_matrix(conf_matrix, labels = ['Not Fraud', 'Fraud'], title = 
 ```
 
 ##### 🎯 Accuracy Calculation
+
 ```python
 # Define Evaluate Model function
 def EvaluateModel(y, x):
@@ -221,6 +222,7 @@ def EvaluateModel(y, x):
     # Plot confusion matrix
     plot_confusion_matrix(conf_matrix_test)
 ```
+
 ### 📌 SAS Flow
 - 🔄 Encapsulating the ML models in the SAS Flow with Python Tools.
 
