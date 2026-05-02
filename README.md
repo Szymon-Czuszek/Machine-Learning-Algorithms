@@ -23,7 +23,9 @@
 - The algorithm selects the K nearest data points based on the calculated distances.
 
 ###### 3. 🗳️ Voting Mechanism:
+
 - In classification tasks (like fake vs. genuine banknotes), KNN assigns the class label based on the majority vote among the K nearest neighbors.
+
 ###### 4. ✅ Final Classification:
 - The new banknote is classified as genuine or counterfeit depending on which class is more frequent among its neighbors.
 
