@@ -58,6 +58,7 @@
 - If the dataset has significantly more genuine banknotes than fake ones, KNN might be biased toward predicting genuine notes.
 
 ##### 🚀 Improving KNN Performance
+
 - To enhance the effectiveness of KNN for detecting fake banknotes:
 1. 📐 Feature Scaling:
 - Since KNN relies on distances, features should be normalized (e.g., Min-Max scaling or Standardization) to prevent some features from dominating others.
