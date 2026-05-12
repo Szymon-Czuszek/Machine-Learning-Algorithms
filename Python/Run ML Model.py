@@ -1,3 +1,38 @@
+#==============================================================================
+# Fake Banknote Detection Using Machine Learning
+#==============================================================================
+
+"""
+This project performs machine learning classification
+to determine whether banknotes are genuine or fake.
+
+The workflow includes:
+-----------------------------------------------------------------------
+1. Downloading dataset from Kaggle
+2. Data preprocessing
+3. Missing value handling
+4. Exploratory Data Analysis (EDA)
+5. Data visualization
+6. Feature scaling
+7. Model training
+8. Model evaluation
+9. ROC curve comparison
+10. Exporting results to SAS
+
+Machine Learning Models Used
+-----------------------------------------------------------------------
+- K-Nearest Neighbors (KNN)
+- Logistic Regression
+
+Libraries Used
+-----------------------------------------------------------------------
+- pandas
+- matplotlib
+- seaborn
+- scikit-learn
+- kagglehub
+"""
+
 # Import wymaganych bibliotek
 
 import pandas as pd
