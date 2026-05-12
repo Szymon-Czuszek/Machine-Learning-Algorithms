@@ -33,25 +33,48 @@ Libraries Used
 - kagglehub
 """
 
-# Import wymaganych bibliotek
+#==============================================================================
+# STEP 1: Import Required Libraries
+#==============================================================================
 
+# Data manipulation
 import pandas as pd
+
+# Kaggle dataset integration
 import kagglehub
+
+# Operating system utilities
 import os
-import pandas as pd
+
+# Visualization libraries
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+# Image display utilities
 from IPython.display import Image, display
 
+# Machine learning utilities
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, roc_curve, auc
+
+from sklearn.metrics import (
+    accuracy_score,
+    classification_report,
+    confusion_matrix,
+    roc_curve,
+    auc
+)
+
+# Feature scaling
 from sklearn.preprocessing import StandardScaler
+
+# Dimensionality reduction
 from sklearn.decomposition import PCA
 
+# Machine learning models
 from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 
+# Additional utilities
 import matplotlib
 import shutil
 
