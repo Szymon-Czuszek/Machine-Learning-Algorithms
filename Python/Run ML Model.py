@@ -93,10 +93,27 @@ path = kagglehub.dataset_download(
 
 print(path)
 
+#==============================================================================
+# STEP 3: Load Dataset
+#==============================================================================
 
+"""
+Load CSV dataset into pandas DataFrame.
 
-# Wczytaj dane do ramki danych (DataFrame) przy użyciu pandas
-df = pd.read_csv(os.path.join(path, os.listdir(path)[0]), header = 0, delimiter = ";")
+Dataset characteristics:
+-----------------------------------------------------------------------
+- semicolon-separated values
+- first row contains headers
+"""
+
+df = pd.read_csv(
+    os.path.join(path, os.listdir(path)[0]),
+    header=0,
+    delimiter=";"
+)
+
+# Display first observations
+print(df.head())
 
 # Load the CSV file with semicolon separator
 #file_path = '/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/fake_bills.csv'
