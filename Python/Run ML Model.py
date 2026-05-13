@@ -78,8 +78,22 @@ from sklearn.neighbors import KNeighborsClassifier
 import matplotlib
 import shutil
 
-# Pobierz najnowszą wersję zbioru danych
-path = kagglehub.dataset_download("alexandrepetit881234/fake-bills")
+#==============================================================================
+# STEP 2: Download Dataset from Kaggle
+#==============================================================================
+
+"""
+Download the latest version of the fake bills dataset
+from Kaggle using kagglehub.
+"""
+
+path = kagglehub.dataset_download(
+    "alexandrepetit881234/fake-bills"
+)
+
+print(path)
+
+
 
 # Wczytaj dane do ramki danych (DataFrame) przy użyciu pandas
 df = pd.read_csv(os.path.join(path, os.listdir(path)[0]), header = 0, delimiter = ";")
