@@ -119,19 +119,26 @@ print(df.head())
 #file_path = '/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/fake_bills.csv'
 #df = pd.read_csv(file_path, sep=';')
 
-print(path)
+#==============================================================================
+# STEP 4: Exploratory Data Analysis (EDA)
+#==============================================================================
 
-# Display the first few rows
-print(df.head())
+"""
+Generate descriptive statistics and identify missing values.
+"""
 
-# Wyświetl podstawowe statystyki opisowe dla danych
+# Descriptive statistics
 print(df.describe())
 
-# Sprawdź, czy w zbiorze danych występują wartości NaN (brakujące dane)
+# Count missing values
 print(df.isna().sum())
 
-# Wyświetl wiersze, w których występują brakujące dane w kolumnie "margin_low"
-print(df[df["margin_low"].isna() == True])
+# Display rows containing missing values
+print(
+    df[df["margin_low"].isna() == True]
+)
+
+
 
 # Oblicz średnią wartość dla kolumny "margin_low"
 mean_value = df["margin_low"].mean()
