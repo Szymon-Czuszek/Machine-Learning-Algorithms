@@ -138,12 +138,19 @@ print(
     df[df["margin_low"].isna() == True]
 )
 
+#==============================================================================
+# STEP 5: Handle Missing Values
+#==============================================================================
 
+"""
+Replace missing values in 'margin_low'
+using the column mean.
+"""
 
-# Oblicz średnią wartość dla kolumny "margin_low"
+# Calculate mean value
 mean_value = df["margin_low"].mean()
 
-# Wypełnij brakujące wartości w kolumnie "margin_low" średnią wartością
+# Fill missing values
 df["margin_low"] = df["margin_low"].fillna(mean_value)
 
 # Zakoduj kolumnę docelową "is_genuine" jako zmienną binarną
