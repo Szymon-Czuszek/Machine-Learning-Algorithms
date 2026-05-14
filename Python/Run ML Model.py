@@ -153,7 +153,19 @@ mean_value = df["margin_low"].mean()
 # Fill missing values
 df["margin_low"] = df["margin_low"].fillna(mean_value)
 
-# Zakoduj kolumnę docelową "is_genuine" jako zmienną binarną
+#==============================================================================
+# STEP 6: Encode Target Variable
+#==============================================================================
+
+"""
+Convert target variable into binary format.
+
+is_genuine:
+-----------------------------------------------------------------------
+1 -> Genuine banknote
+0 -> Fake banknote
+"""
+
 df['is_genuine'] = df['is_genuine'].astype(int)
 
 # Zdefiniuj cechy (X) i zmienną docelową (y)
