@@ -190,8 +190,25 @@ X = df[
 
 y = df['is_genuine']
 
-# Podziel dane na zbiór treningowy i testowy
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 42)
+#==============================================================================
+# STEP 8: Split Dataset
+#==============================================================================
+
+"""
+Split data into:
+- training set
+- testing set
+
+80% -> training
+20% -> testing
+"""
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X,
+    y,
+    test_size=0.2,
+    random_state=42
+)
 
 # Normalizacja danych
 scaler = StandardScaler()
