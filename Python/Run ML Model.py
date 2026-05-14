@@ -168,8 +168,26 @@ is_genuine:
 
 df['is_genuine'] = df['is_genuine'].astype(int)
 
-# Zdefiniuj cechy (X) i zmienną docelową (y)
-X = df[['diagonal', 'height_left', 'height_right', 'margin_low', 'margin_up', 'length']]
+#==============================================================================
+# STEP 7: Define Features and Target
+#==============================================================================
+
+"""
+X -> predictor variables
+y -> target variable
+"""
+
+X = df[
+    [
+        'diagonal',
+        'height_left',
+        'height_right',
+        'margin_low',
+        'margin_up',
+        'length'
+    ]
+]
+
 y = df['is_genuine']
 
 # Podziel dane na zbiór treningowy i testowy
