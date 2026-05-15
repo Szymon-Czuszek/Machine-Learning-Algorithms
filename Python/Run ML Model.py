@@ -226,18 +226,45 @@ scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
-# Rozkład zmiennej docelowej
-plt.figure(figsize=(6,4))
-df['is_genuine'].value_counts().plot(kind='bar', color=['green', 'red'])
-plt.title('Rozkład zmiennej docelowej (is_genuine)')
-plt.xticks(ticks=[0,1], labels=['Fałszywy', 'Prawdziwy'], rotation=0)
+#==============================================================================
+# STEP 10: Visualize Target Distribution
+#==============================================================================
+
+plt.figure(figsize=(6, 4))
+
+df['is_genuine'].value_counts().plot(
+    kind='bar',
+    color=['green', 'red']
+)
+
+plt.title(
+    'Rozkład zmiennej docelowej (is_genuine)'
+)
+
+plt.xticks(
+    ticks=[0, 1],
+    labels=['Fałszywy', 'Prawdziwy'],
+    rotation=0
+)
+
 plt.ylabel('Liczba próbek')
+
 plt.grid(axis='y', alpha=0.3)
+
 plt.tight_layout()
+
 plt.show()
 
+# Save chart
 plt.savefig("Rozklad.png")
-shutil.copy("Rozklad.png", "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/")
+
+# Copy chart to target directory
+shutil.copy(
+    "Rozklad.png",
+    "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/"
+)
+
+
 
 # Macierz korelacji
 plt.figure(figsize=(8,6))
