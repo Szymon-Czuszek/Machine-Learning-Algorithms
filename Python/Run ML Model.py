@@ -264,17 +264,40 @@ shutil.copy(
     "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/"
 )
 
+#==============================================================================
+# STEP 11: Correlation Matrix
+#==============================================================================
 
+"""
+Visualize relationships between variables.
+"""
 
-# Macierz korelacji
-plt.figure(figsize=(8,6))
-sns.heatmap(df.corr(), annot=True, cmap='coolwarm', fmt='.2f')
+plt.figure(figsize=(8, 6))
+
+sns.heatmap(
+    df.corr(),
+    annot=True,
+    cmap='coolwarm',
+    fmt='.2f'
+)
+
 plt.title('Macierz korelacji cech')
+
 plt.tight_layout()
+
 plt.show()
 
+# Save chart
 plt.savefig("Korelacja.png")
-shutil.copy("Korelacja.png", "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/")
+
+# Export chart
+shutil.copy(
+    "Korelacja.png",
+    "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/"
+)
+
+
+
 
 import shutil
 
