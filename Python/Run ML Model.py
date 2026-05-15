@@ -296,37 +296,110 @@ shutil.copy(
     "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/"
 )
 
+#==============================================================================
+# STEP 12: Feature Distribution Visualizations
+#==============================================================================
 
+"""
+Visualize distributions of selected features
+for genuine and fake banknotes.
+"""
 
+#--------------------------------------------------------------------------
+# Diagonal Feature
+#--------------------------------------------------------------------------
 
-import shutil
+plt.figure(figsize=(6, 4))
 
-# Diagonal
-plt.figure(figsize=(6,4))
-sns.histplot(data=df, x='diagonal', hue='is_genuine', kde=True, palette=['red', 'green'], bins=30)
-plt.title('Rozkład cechy "diagonal" względem klasy')
+sns.histplot(
+    data=df,
+    x='diagonal',
+    hue='is_genuine',
+    kde=True,
+    palette=['red', 'green'],
+    bins=30
+)
+
+plt.title(
+    'Rozkład cechy "diagonal" względem klasy'
+)
+
 plt.tight_layout()
+
 plt.savefig('diagonal.png')
-shutil.copy("diagonal.png", "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/")
+
+shutil.copy(
+    "diagonal.png",
+    "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/"
+)
+
 plt.show()
 
-# Margin low
-plt.figure(figsize=(6,4))
-sns.histplot(data=df, x='margin_low', hue='is_genuine', kde=True, palette=['red', 'green'], bins=30)
-plt.title('Rozkład cechy "margin_low" względem klasy')
+
+#--------------------------------------------------------------------------
+# Margin Low Feature
+#--------------------------------------------------------------------------
+
+plt.figure(figsize=(6, 4))
+
+sns.histplot(
+    data=df,
+    x='margin_low',
+    hue='is_genuine',
+    kde=True,
+    palette=['red', 'green'],
+    bins=30
+)
+
+plt.title(
+    'Rozkład cechy "margin_low" względem klasy'
+)
+
 plt.tight_layout()
+
 plt.savefig('margin_low.png')
-shutil.copy("margin_low.png", "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/")
+
+shutil.copy(
+    "margin_low.png",
+    "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/"
+)
+
 plt.show()
 
-# Length
-plt.figure(figsize=(6,4))
-sns.histplot(data=df, x='length', hue='is_genuine', kde=True, palette=['red', 'green'], bins=30)
-plt.title('Rozkład cechy "length" względem klasy')
+
+#--------------------------------------------------------------------------
+# Length Feature
+#--------------------------------------------------------------------------
+
+plt.figure(figsize=(6, 4))
+
+sns.histplot(
+    data=df,
+    x='length',
+    hue='is_genuine',
+    kde=True,
+    palette=['red', 'green'],
+    bins=30
+)
+
+plt.title(
+    'Rozkład cechy "length" względem klasy'
+)
+
 plt.tight_layout()
+
 plt.savefig('length.png')
-shutil.copy("length.png", "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/")
+
+shutil.copy(
+    "length.png",
+    "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/"
+)
+
 plt.show()
+
+
+
+
 
 # Wizualizacja dokładności dla różnych k
 accuracies = []
