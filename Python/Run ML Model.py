@@ -459,17 +459,20 @@ shutil.copy(
     "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/"
 )
 
+#==============================================================================
+# STEP 15: Select Best K Value
+#==============================================================================
 
-
-
-
-
-# Najlepsza dokładność
+# Highest accuracy
 print(max(accuracies))
 
-# Musimy dodać 1 bo indexy w Python liczy się od zera
+# Add 1 because Python indexes start from 0
 k = accuracies.index(max(accuracies)) + 1
+
 print(k)
+
+
+
 
 ### K-Nearest Neighbors (KNN) ###
 print("\nAlgorytm K-Nearest Neighbors (KNN):")
