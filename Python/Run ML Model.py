@@ -423,23 +423,46 @@ for k in k_values:
         accuracy_score(y_test, y_pred)
     )
 
+#==============================================================================
+# STEP 14: Visualize KNN Accuracy
+#==============================================================================
 
+plt.figure(figsize=(10, 6))
 
+plt.plot(
+    k_values,
+    accuracies,
+    marker='o',
+    linestyle='-',
+    color='b'
+)
 
+plt.title(
+    "Dokładność w zależności od liczby sąsiadów (k)"
+)
 
-
-# Rysowanie wykresu
-plt.figure(figsize = (10, 6))
-plt.plot(k_values, accuracies, marker = 'o', linestyle = '-', color = 'b')
-plt.title("Dokładność w zależności od liczby sąsiadów (k)")
 plt.xlabel("Liczba sąsiadów (k)")
+
 plt.ylabel("Dokładność")
-plt.grid(alpha = 0.5)
+
+plt.grid(alpha=0.5)
+
 plt.tight_layout()
+
 plt.show()
 
+# Save visualization
 plt.savefig("knn_accuracy.png")
-shutil.copy("knn_accuracy.png", "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/")
+
+shutil.copy(
+    "knn_accuracy.png",
+    "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/"
+)
+
+
+
+
+
 
 # Najlepsza dokładność
 print(max(accuracies))
