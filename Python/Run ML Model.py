@@ -397,19 +397,36 @@ shutil.copy(
 
 plt.show()
 
+#==============================================================================
+# STEP 13: Determine Optimal K Value for KNN
+#==============================================================================
 
+"""
+Evaluate model accuracy for multiple values of k.
+"""
 
-
-
-# Wizualizacja dokładności dla różnych k
 accuracies = []
+
 k_values = range(1, 11)
 
 for k in k_values:
-    knn = KNeighborsClassifier(n_neighbors = k)
+
+    knn = KNeighborsClassifier(
+        n_neighbors=k
+    )
+
     knn.fit(X_train, y_train)
+
     y_pred = knn.predict(X_test)
-    accuracies.append(accuracy_score(y_test, y_pred))
+
+    accuracies.append(
+        accuracy_score(y_test, y_pred)
+    )
+
+
+
+
+
 
 # Rysowanie wykresu
 plt.figure(figsize = (10, 6))
