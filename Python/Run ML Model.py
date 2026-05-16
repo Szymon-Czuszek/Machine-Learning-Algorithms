@@ -471,19 +471,29 @@ k = accuracies.index(max(accuracies)) + 1
 
 print(k)
 
+#==============================================================================
+# STEP 16: Train KNN Model
+#==============================================================================
 
-
-
-### K-Nearest Neighbors (KNN) ###
 print("\nAlgorytm K-Nearest Neighbors (KNN):")
 
-# Inicjalizacja modelu KNN
-model_knn = KNeighborsClassifier(n_neighbors = k)
+# Initialize KNN model
+model_knn = KNeighborsClassifier(
+    n_neighbors=k
+)
+
+# Train model
 model_knn.fit(X_train, y_train)
 
-# Predykcja dla zbioru testowego (KNN)
+# Predictions
 y_pred_knn = model_knn.predict(X_test)
+
+# Prediction probabilities
 y_pred_proba_knn = model_knn.predict_proba(X_test)[:, 1]
+
+
+
+
 
 # Ocena modelu (KNN)
 accuracy_knn = accuracy_score(y_test, y_pred_knn)
