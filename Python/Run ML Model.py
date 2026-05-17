@@ -491,19 +491,43 @@ y_pred_knn = model_knn.predict(X_test)
 # Prediction probabilities
 y_pred_proba_knn = model_knn.predict_proba(X_test)[:, 1]
 
+#==============================================================================
+# STEP 17: Evaluate KNN Model
+#==============================================================================
+
+accuracy_knn = accuracy_score(
+    y_test,
+    y_pred_knn
+)
+
+print(
+    f"Dokładność (KNN, k={k}): {accuracy_knn:.2f}"
+)
+
+print(
+    "\nRaport klasyfikacji (KNN):\n",
+    classification_report(y_test, y_pred_knn)
+)
+
+print(
+    "\nMacierz pomyłek (KNN):\n",
+    confusion_matrix(y_test, y_pred_knn)
+)
+
+# ROC curve
+fpr_knn, tpr_knn, _ = roc_curve(
+    y_test,
+    y_pred_proba_knn
+)
+
+roc_auc_knn = auc(
+    fpr_knn,
+    tpr_knn
+)
 
 
 
 
-# Ocena modelu (KNN)
-accuracy_knn = accuracy_score(y_test, y_pred_knn)
-print(f"Dokładność (KNN, k={k}): {accuracy_knn:.2f}")
-print("\nRaport klasyfikacji (KNN):\n", classification_report(y_test, y_pred_knn))
-print("\nMacierz pomyłek (KNN):\n", confusion_matrix(y_test, y_pred_knn))
-
-# Krzywa ROC (KNN)
-fpr_knn, tpr_knn, _ = roc_curve(y_test, y_pred_proba_knn)
-roc_auc_knn = auc(fpr_knn, tpr_knn)
 
 ### Regresja logistyczna ###
 print("Regresja logistyczna:")
