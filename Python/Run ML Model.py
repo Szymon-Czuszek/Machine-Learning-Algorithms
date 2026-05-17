@@ -525,18 +525,25 @@ roc_auc_knn = auc(
     tpr_knn
 )
 
+#==============================================================================
+# STEP 18: Train Logistic Regression Model
+#==============================================================================
 
-
-
-
-### Regresja logistyczna ###
 print("Regresja logistyczna:")
+
 model_lr = LogisticRegression()
+
 model_lr.fit(X_train, y_train)
 
-# Predykcja dla zbioru testowego (Regresja logistyczna)
+# Predictions
 y_pred_lr = model_lr.predict(X_test)
+
+# Prediction probabilities
 y_pred_proba_lr = model_lr.predict_proba(X_test)[:, 1]
+
+
+
+
 
 # Ocena modelu (Regresja logistyczna)
 accuracy_lr = accuracy_score(y_test, y_pred_lr)
