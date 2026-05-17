@@ -541,19 +541,44 @@ y_pred_lr = model_lr.predict(X_test)
 # Prediction probabilities
 y_pred_proba_lr = model_lr.predict_proba(X_test)[:, 1]
 
+#==============================================================================
+# STEP 19: Evaluate Logistic Regression
+#==============================================================================
+
+accuracy_lr = accuracy_score(
+    y_test,
+    y_pred_lr
+)
+
+print(
+    f"Dokładność (Regresja logistyczna): {accuracy_lr:.2f}"
+)
+
+print(
+    "\nRaport klasyfikacji (Regresja logistyczna):\n",
+    classification_report(y_test, y_pred_lr)
+)
+
+print(
+    "\nMacierz pomyłek (Regresja logistyczna):\n",
+    confusion_matrix(y_test, y_pred_lr)
+)
+
+# ROC Curve
+fpr_lr, tpr_lr, _ = roc_curve(
+    y_test,
+    y_pred_proba_lr
+)
+
+roc_auc_lr = auc(
+    fpr_lr,
+    tpr_lr
+)
 
 
 
 
-# Ocena modelu (Regresja logistyczna)
-accuracy_lr = accuracy_score(y_test, y_pred_lr)
-print(f"Dokładność (Regresja logistyczna): {accuracy_lr:.2f}")
-print("\nRaport klasyfikacji (Regresja logistyczna):\n", classification_report(y_test, y_pred_lr))
-print("\nMacierz pomyłek (Regresja logistyczna):\n", confusion_matrix(y_test, y_pred_lr))
 
-# Krzywa ROC (Regresja logistyczna)
-fpr_lr, tpr_lr, _ = roc_curve(y_test, y_pred_proba_lr)
-roc_auc_lr = auc(fpr_lr, tpr_lr)
 
 ### Wizualizacja krzywych ROC dla obu modeli ###
 plt.figure(figsize = (8, 6))
