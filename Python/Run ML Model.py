@@ -575,70 +575,83 @@ roc_auc_lr = auc(
     tpr_lr
 )
 
+#==============================================================================
+# STEP 20: Compare ROC Curves
+#==============================================================================
 
+plt.figure(figsize=(8, 6))
 
-
-
-
-### Wizualizacja krzywych ROC dla obu modeli ###
-plt.figure(figsize = (8, 6))
-
-# Regresja logistyczna
-plt.plot(fpr_lr,
-         tpr_lr,
-         color = 'blue',
-         lw = 2,
-         label = f'Regresja Logistyczna (AUC = {roc_auc_lr:.2f})'
-        )
+# Logistic Regression
+plt.plot(
+    fpr_lr,
+    tpr_lr,
+    color='blue',
+    lw=2,
+    label=f'Regresja Logistyczna (AUC = {roc_auc_lr:.2f})'
+)
 
 # KNN
-plt.plot(fpr_knn,
-         tpr_knn,
-         color = 'green',
-         lw = 2,
-         linestyle = '-.',
-         label = f'KNN (k={k}, AUC = {roc_auc_knn:.2f})'
-        )
+plt.plot(
+    fpr_knn,
+    tpr_knn,
+    color='green',
+    lw=2,
+    linestyle='-.',
+    label=f'KNN (k={k}, AUC = {roc_auc_knn:.2f})'
+)
 
-# Linia zgadywania
-plt.plot([0, 1],
-         [0, 1],
-         color = 'red',
-         linestyle = '--',
-         label = 'Zgadywanie'
-        )
+# Random guessing baseline
+plt.plot(
+    [0, 1],
+    [0, 1],
+    color='red',
+    linestyle='--',
+    label='Zgadywanie'
+)
 
-# Dostosowanie wykresu
-plt.xlabel('Wskaźnik fałszywych alarmów \n(False Positive Rate)',
-           fontsize = 14,
-           fontweight = 'bold'
-          )
+# Axis labels
+plt.xlabel(
+    'Wskaźnik fałszywych alarmów \n(False Positive Rate)',
+    fontsize=14,
+    fontweight='bold'
+)
 
-plt.ylabel('Wskaźnik prawdziwych alarmów \n(True Positive Rate)',
-           fontsize = 14,
-           fontweight = 'bold'
-          )
+plt.ylabel(
+    'Wskaźnik prawdziwych alarmów \n(True Positive Rate)',
+    fontsize=14,
+    fontweight='bold'
+)
 
-plt.title('Porównanie krzywych ROC',
-          fontsize = 16,
-          fontweight = 'bold'
-         )
+# Chart title
+plt.title(
+    'Porównanie krzywych ROC',
+    fontsize=16,
+    fontweight='bold'
+)
 
-plt.legend(loc = "lower right",
-           fontsize = 12
-          )
+plt.legend(
+    loc="lower right",
+    fontsize=12
+)
 
-plt.grid(True,
-         linestyle = '--',
-         alpha = 0.6
-        )
+plt.grid(
+    True,
+    linestyle='--',
+    alpha=0.6
+)
 
 plt.tight_layout()
 
 plt.show()
 
+# Save chart
 plt.savefig("ROC.png")
-shutil.copy("ROC.png", "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/")
+
+# Export chart
+shutil.copy(
+    "ROC.png",
+    "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/"
+)
 
 # Send the modified DataFrame back to SAS
 SAS.df2sd(df, _output1)
