@@ -680,4 +680,18 @@ StandardScaler transforms features:
 -------------------------------------------------------------------------------
 mean = 0
 standard deviation = 1
+
+KNN Algorithm
+-------------------------------------------------------------------------------
+K-Nearest Neighbors classifies observations based on:
+- nearest training samples
+
+Advantages:
+- simple
+- intuitive
+- effective for small datasets
+
+Disadvantages:
+- sensitive to scaling
+- computationally expensive for large datasets
 """
