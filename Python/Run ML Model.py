@@ -668,4 +668,16 @@ SAS.df2sd(df, _output1)
 # Commentary
 #==============================================================================
 
+"""
+Why Standardization Matters
+-------------------------------------------------------------------------------
+KNN uses distance calculations.
 
+Without scaling:
+- variables with larger numeric ranges dominate the model
+
+StandardScaler transforms features:
+-------------------------------------------------------------------------------
+mean = 0
+standard deviation = 1
+"""
