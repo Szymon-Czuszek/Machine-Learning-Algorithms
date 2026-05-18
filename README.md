@@ -73,6 +73,7 @@
 ### 📊 Logistic Regression
 
 #### 🏦 Logistic Regression in Detecting Fake Banknotes
+
 - Logistic Regression is a fundamental classification algorithm used to predict categorical outcomes. In the case of fake banknote detection, Logistic Regression helps classify a banknote as either genuine or counterfeit based on extracted numerical features such as variance, skewness, kurtosis, and entropy of wavelet-transformed images.
 
 ##### 🔎 How Logistic Regression Works
