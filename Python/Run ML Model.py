@@ -653,5 +653,13 @@ shutil.copy(
     "/export/viya/homes/szymon.czuszek@edu.uekat.pl/casuser/ML/"
 )
 
-# Send the modified DataFrame back to SAS
+#==============================================================================
+# STEP 21: Export DataFrame Back to SAS
+#==============================================================================
+
+"""
+Transfer processed dataset from Python
+back into SAS environment.
+"""
+
 SAS.df2sd(df, _output1)
