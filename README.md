@@ -48,7 +48,7 @@
 - Can misclassify notes if fake banknotes are not well-represented in the training set.
 - Typically, choosing an optimal K involves cross-validation to find a balance between bias and variance.
 
-##### ⚠️ Limitations of KNN
+##### ⚠️ Limitations of KNN algorithm
 
 - Despite its advantages, KNN has some drawbacks when applied to fake banknote detection:
 1. 🐢 Computational Cost:
